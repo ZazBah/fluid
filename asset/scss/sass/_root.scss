@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$white: #ffffff;
+$whiteLight: #cccccc;
+$black: #000000;
+$blackLight: #333333;
+$blue: #16b6ea;
+
+$bg-dark: #212121;
+$bg-light: #dceceb;
+
+$t-3: all linear 0.3s;
+$t-5: all linear 0.5s;
+
+@mixin heading1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: $blackLight;
+}
+// @mixin heading2 {
+
+// }
+@mixin pera {
+    font-size: 15px;
+    font-weight: 200;
+    color: $blackLight;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+@mixin button {
+    padding: 7px 30px;
+    border-radius: 30px;
+    border: 1px solid $white;
+    background-color: transparent;
+    color: $white;
+    font-size: 15px;
+    font-weight: 400;
+    transition: $t-3;
+    &:hover{
+        border-color: $white;
+        background-color: $white;
+        color: $blue;
+    }
+}
+.opacity0{
+    opacity: 0;
+}
+.imgbox{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+}

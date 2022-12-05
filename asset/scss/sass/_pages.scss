@@ -1,0 +1,51 @@
+.pages{
+    padding: 40px 0px;
+    background-color: $bg-dark;
+    h2{
+        @include heading1;
+        text-align: center;
+        color: $white;
+    }
+    p{
+        @include pera;
+        color: $whiteLight;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .card{
+        border: none;
+        border-radius: none;
+        background-color: transparent;
+        padding: 0px 20px;
+
+        .card_header{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            transition: $t-3;
+            .imgbox{
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+        .card_body{
+            h3{
+                font-size: 20px;
+                color: $whiteLight;
+                font-weight: 200;
+                margin-bottom: 40px;
+                span{
+                    font-size: 40px;
+                    font-weight: 400;
+                    margin-right: 15px;
+                }
+            }
+        }
+        &:hover{
+            .card_header{
+                margin-top: 0px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

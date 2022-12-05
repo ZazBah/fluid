@@ -1,0 +1,122 @@
+.pricing{
+    background: url('../image/pricing-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .overlay{
+        padding: 40px 0px;
+        background-color: #00000060;
+        h2{
+            @include heading1;
+            text-align: center;
+            color: $white;
+        }
+        p{
+            @include pera;
+            text-align: center;
+            color: $whiteLight;
+        }
+        .card{
+            border: none;
+            border-radius: 0px;
+            background-color: $white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            transition: $t-3;
+            .card_header{
+                text-align: center;
+                padding: 30px 0px;
+                background-color: #f0f0f0;
+                h3{
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: #333333;
+                    margin-bottom: 20px;
+                    transition: $t-3;
+                }
+                h4{
+                    font-size: 80px;
+                    font-weight: 800;
+                    position: relative;
+                    margin: 0;
+                    color: #333333;
+                    transition: $t-3;
+                }
+                p{
+                    @include pera;
+                    margin: 0;
+                    font-size: 20px;
+                    color: #333333;
+                    transition: $t-3;
+                }
+            }
+            .card_body{
+                ul{
+                    padding: 30px 0px;
+                    li{
+                        @include pera;
+                        text-align: center;
+                    }
+                }
+                button{
+                    padding: 7px 0px;
+                    width: 100%;
+                    border: none;
+                    background-color: #111111;
+                    color: $white;
+                    font-weight: 600;
+                    transition: $t-3;
+                    &:hover{
+                        background-color: $blue;
+                    }
+                }
+            }
+            &:hover{
+                margin-top: 0px;
+                margin-bottom: 20px;
+                .card_header{
+                    h3,
+                    h4,
+                    p{
+                        color: $blue;
+                    }
+                }
+            }
+        }
+        .center_card{
+            position: relative;
+            overflow: hidden;
+            .card_header{
+                background-color: $blue;
+                h3,
+                h4,
+                p{
+                    color: $white;
+                }
+            }
+            &:hover{
+                .card_header{
+                    h3,
+                    h4,
+                    p{
+                        color: $white;
+                    }
+                }
+            }
+            &::before{
+                content: 'POPULAR';
+                position: absolute;
+                top: 11px;
+                left: -44px;
+                background-color: #111111;
+                color: $white;
+                text-align: center;
+                padding: 10px 50px;
+                transform: rotate(-45deg);
+                box-shadow: 1px 7px 15px #00000060;
+            }
+        }
+    }
+}

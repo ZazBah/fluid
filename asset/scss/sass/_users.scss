@@ -1,0 +1,29 @@
+.users{
+    padding: 40px 0px;
+    background: $bg-dark;
+    .card{
+        padding: 20px;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        i{
+            font-size: 100px;
+            color: $white;
+            margin-bottom: 10px;
+        }
+        h3{
+            @include heading1;
+            font-size: 50px;
+            color: $white;
+            margin: 0
+        }
+        p{
+            @include pera;
+            color: $white;
+            margin: 0;
+        }
+    }
+    .imgbox{
+        margin-top: 40px;
+    }
+}
