@@ -26,6 +26,8 @@
     <!--Slick_CSS-->
     <link rel="stylesheet" href="asset/css/slick.css">
 
+    <!-- AOS_css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--My_CSS-->
     <link rel="stylesheet" href="asset/scss/main.css">
@@ -197,10 +199,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6">
-                        <h2>How to Deliver Ddigital Experiences</h2>
+                        <h2>Digital Experiences</h2>
                         <p>Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
-                        <button>Download Now</button>
-                        <button>Contatc with us</button>
+                        <button><span>Download</span></button>
+                        <button><span>Contatc</span></button>
                     </div>
                     <div class="col-12 col-lg-6">
                         <div class="banner_img">
@@ -214,7 +216,8 @@
         </section>
 
         <section class="pages">
-            <h2>9 Pixel-Perfect Homepages</h2>
+            <div id="particle-js"></div>
+            <h2>Pixel-Perfect Homepages</h2>
             <p>
                 Fluid is packed with a beautiful collection of modern, easily <br>
                 importable, and highly customizable homepage layouts. Create your website without <br> 
@@ -223,10 +226,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
                             <div class="card_header">
                                 <div class="imgbox">
                                     <img src="asset/image/landing-3-img-1.jpg" alt="">
+                                </div>
+                                <div class="overlay">
+                                    <button value="modalOne" class="preview">Preview</button>
                                 </div>
                             </div>
                             <div class="card_body">
@@ -235,10 +241,13 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="400">
                             <div class="card_header">
                                 <div class="imgbox">
                                     <img src="asset/image/landing-3-img-2.jpg" alt="">
+                                </div>
+                                <div class="overlay">
+                                    <button value="modalTow" class="preview">Preview</button>
                                 </div>
                             </div>
                             <div class="card_body">
@@ -247,10 +256,13 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="500">
                             <div class="card_header">
                                 <div class="imgbox">
                                     <img src="asset/image/landing-3-img-3.jpg" alt="">
+                                </div>
+                                <div class="overlay">
+                                    <button value="modalThree" class="preview">Preview</button>
                                 </div>
                             </div>
                             <div class="card_body">
@@ -259,10 +271,13 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="600">
                             <div class="card_header">
                                 <div class="imgbox">
                                     <img src="asset/image/landing-3-img-4.jpg" alt="">
+                                </div>
+                                <div class="overlay">
+                                    <button value="modalFour" class="preview">Preview</button>
                                 </div>
                             </div>
                             <div class="card_body">
@@ -271,10 +286,13 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="700">
                             <div class="card_header">
                                 <div class="imgbox">
                                     <img src="asset/image/landing-3-img-5.jpg" alt="">
+                                </div>
+                                <div class="overlay">
+                                    <button value="modalFive" class="preview">Preview</button>
                                 </div>
                             </div>
                             <div class="card_body">
@@ -283,10 +301,13 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="800">
                             <div class="card_header">
                                 <div class="imgbox">
                                     <img src="asset/image/landing-3-img-6.jpg" alt="">
+                                </div>
+                                <div class="overlay">
+                                    <button value="modalSix" class="preview">Preview</button>
                                 </div>
                             </div>
                             <div class="card_body">
@@ -296,6 +317,130 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="modal_section">
+            <div id="modalOne" class="modal_container">
+                <div class="modal-background">
+                  <div class="modal">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-9">
+                                <div class="imgbox">
+                                    <img src="asset/image/landing-3-img-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="button_box">
+                                    <button><span>Demo page</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div id="modalTow" class="modal_container">
+                <div class="modal-background">
+                  <div class="modal">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-9">
+                                <div class="imgbox">
+                                    <img src="asset/image/landing-3-img-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="button_box">
+                                    <button><span>Demo page</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div id="modalThree" class="modal_container">
+                <div class="modal-background">
+                  <div class="modal">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-9">
+                                <div class="imgbox">
+                                    <img src="asset/image/landing-3-img-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="button_box">
+                                    <button><span>Demo page</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div id="modalFour" class="modal_container">
+                <div class="modal-background">
+                  <div class="modal">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-9">
+                                <div class="imgbox">
+                                    <img src="asset/image/landing-3-img-4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="button_box">
+                                    <button><span>Demo page</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div id="modalFive" class="modal_container">
+                <div class="modal-background">
+                  <div class="modal">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-9">
+                                <div class="imgbox">
+                                    <img src="asset/image/landing-3-img-5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="button_box">
+                                    <button><span>Demo page</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div id="modalSix" class="modal_container">
+                <div class="modal-background">
+                  <div class="modal">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-9">
+                                <div class="imgbox">
+                                    <img src="asset/image/landing-3-img-6.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="button_box">
+                                    <button><span>Demo page</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
         </section>
 
         <section class="slider">
@@ -350,42 +495,54 @@
                     </p>
                     <div class="row">
                         <div class="col-12 col-lg-4">
-                            <div class="card">
-                                <div class="card_header">
-                                    <div class="icon_box">
-                                        <i class='bx bxl-sketch'></i>
+                            <div class="card_box" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000">
+                                <span>
+                                    <div class="card">
+                                        <div class="card_header">
+                                            <div class="icon_box">
+                                                <i class='bx bxl-sketch'></i>
+                                            </div>
+                                        </div>
+                                        <div class="card_body">
+                                            <h3>Clean Design</h3>
+                                            <p>Increase sales by showing true dynamics of your website.</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card_body">
-                                    <h3>Clean Design</h3>
-                                    <p>Increase sales by showing true dynamics of your website.</p>
-                                </div>
+                                </span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4">
-                            <div class="card">
-                                <div class="card_header">
-                                    <div class="icon_box">
-                                        <i class='bx bxs-lock' ></i>
+                            <div class="card_box" data-aos="flip-up" data-aos-delay="400" data-aos-duration="1000">
+                                <span>
+                                    <div class="card">
+                                        <div class="card_header">
+                                            <div class="icon_box">
+                                                <i class='bx bxs-lock' ></i>
+                                            </div>
+                                        </div>
+                                        <div class="card_body">
+                                            <h3>Secure Data</h3>
+                                            <p>Build your online store's trust using Social Proof & Urgency.</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card_body">
-                                    <h3>Secure Data</h3>
-                                    <p>Build your online store's trust using Social Proof & Urgency.</p>
-                                </div>
+                                </span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4">
-                            <div class="card">
-                                <div class="card_header">
-                                    <div class="icon_box">
-                                        <i class='bx bxl-mongodb'></i>
+                            <div class="card_box" data-aos="flip-up" data-aos-delay="500" data-aos-duration="1000">
+                                <span>
+                                    <div class="card">
+                                        <div class="card_header">
+                                            <div class="icon_box">
+                                                <i class='bx bxl-mongodb'></i>
+                                            </div>
+                                        </div>
+                                        <div class="card_body">
+                                            <h3>Retina Ready</h3>
+                                            <p>Realize importance of social proof in customer's purchase decision.</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card_body">
-                                    <h3>Retina Ready</h3>
-                                    <p>Realize importance of social proof in customer's purchase decision.</p>
-                                </div>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -394,6 +551,7 @@
         </section>
 
         <section class="users">
+            <div id="particle-js-user"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3">
@@ -435,6 +593,123 @@
             </div>
         </section>
 
+        <section class="download">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <h2>Available on</h2>
+                        <p>sApp is available for all devices, consectetur adipisicing elit. Itaque at harum quam explicabo</p>
+                        <a class="btn btn-google" href="#" title="Get It on Google Play">Google Play</a>
+                        <a class="btn btn-apple" href="#" title="Download on the App Store">App Store</a>
+                        <a class="btn btn-web" href="#" title="Go to">Website</a>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="imgbox">
+                            <img src="asset/image/iphone_x.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="details">
+            <div id="particle-js-details"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="card_box">
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="imgbox">
+                                        <img src="asset/image/layers.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h3>Fully functional</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="imgbox">
+                                        <img src="asset/image/speak.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h3>Live Chat</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="imgbox">
+                                        <img src="asset/image/lock.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h3>Secure Data</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="imgbox">
+                            <img src="asset/image/details.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card_box">
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="imgbox">
+                                        <img src="asset/image/support.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h3>Easy to Customize</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="imgbox">
+                                        <img src="asset/image/seo-and-web.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h3>Responsive Design</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="imgbox">
+                                        <img src="asset/image/code.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <h3>Help Documentation</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="brand">
             <div class="container">
                 <h2>Trusted by companies</h2>
@@ -487,7 +762,7 @@
                     </p>
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <div class="card">
+                            <div class="card" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                                 <div class="card_header">
                                     <h3>BASIC</h3>
                                     <h4>$19</h4>
@@ -506,7 +781,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-4">
-                            <div class="card center_card">
+                            <div class="card center_card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                                 <div class="card_header">
                                     <h3>PROFESSIONAL</h3>
                                     <h4>$35</h4>
@@ -525,7 +800,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-4">
-                            <div class="card">
+                            <div class="card" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
                                 <div class="card_header">
                                     <h3>BUSINESS</h3>
                                     <h4>$89</h4>
@@ -657,6 +932,14 @@
     <!--footer-end-->
 
     <!-- floting-content-start -->
+        <div id="loader">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     <!-- floting-content-end -->
 
 
@@ -668,6 +951,13 @@
 
     <!--Slick_Js-->
     <script src="asset/js/slick.min.js"></script>
+
+    <!--Perticle_Js-->
+    <script src="asset/js/particles.min.js"></script>
+    <script src="asset/js/particle.js"></script>
+
+    <!-- AOS_js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--My_JavaScript-->
     <script src="asset/js/script.js"></script>

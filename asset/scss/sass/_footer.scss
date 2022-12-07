@@ -1,6 +1,8 @@
 .footer{
     padding: 40px 0px;
     background-color: $bg-dark;
+    position: relative;
+    overflow: hidden;
 
     .content{
         display: flex;
@@ -19,6 +21,9 @@
             font-weight: 100;
             color: $white;
             text-align: center;
+            &::after{
+                content: none;
+            }
         }
         .search_box{
             width: 100%;

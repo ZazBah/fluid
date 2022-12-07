@@ -1,0 +1,25 @@
+.details{
+    padding: 40px 0px;
+    background: $bg-dark;
+    position: relative;
+    .card{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        background-color: transparent;
+        border: none;
+        .card_header{
+            width: 60px;
+        }
+        h3{
+            color: $white;
+            font-size: 25px;
+            font-weight: 600;
+        }
+        p{
+            @include pera;
+            color: $whiteLight;
+        }
+    }
+}

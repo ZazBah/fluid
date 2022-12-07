@@ -1,5 +1,5 @@
 .brand{
-    padding: 40px 0px;
+    padding: 180px 0px;
     h2{
         @include heading1;
         text-align: center;
@@ -11,7 +11,10 @@
     }
     .brand_slider{
         .slide_item{
-            padding: 50px;
+            padding: 20px;
+            .imgbox{
+                transform: scale(0.8);
+            }
         }
     }
 }

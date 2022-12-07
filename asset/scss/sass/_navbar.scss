@@ -174,13 +174,7 @@
         }
         .book_now{
             @include button;
-            border-color: #616161;
-            color: #616161;
-            &:hover{
-                background-color: $blue;
-                border-color: $blue;
-                color: $white;
-            }
+            
         }
         .button_middle_nav{
             display: none;

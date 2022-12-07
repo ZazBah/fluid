@@ -1,6 +1,8 @@
 .pages{
     padding: 40px 0px;
     background-color: $bg-dark;
+    position: relative;
+    overflow: hidden;
     h2{
         @include heading1;
         text-align: center;
@@ -22,9 +24,44 @@
             margin-top: 10px;
             margin-bottom: 20px;
             transition: $t-3;
+            position: relative;
+            overflow: hidden;
             .imgbox{
                 img{
                     cursor: pointer;
+                }
+            }
+            .overlay{
+                position: absolute;
+                top: 100%;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: #00000080;
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                transition: $t-3;
+                transition-delay: 0.3s;
+                button{
+                    margin: 10px;
+                    font-size: 20px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    padding: 7px 30px;
+                    background-color: transparent;
+                    border: 2px solid $blue;
+                    color: $blue;
+                    transition: $t-3;
+                    &:hover{
+                        color: $white;
+                        background-color: $blue;
+                    }
+                }
+            }
+            &:hover{
+                .overlay{
+                    top: 0;
                 }
             }
         }
