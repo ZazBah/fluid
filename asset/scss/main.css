@@ -203,12 +203,35 @@ a:hover {
   width: 100px;
 }
 .navbar .container-fluid .hamburger {
+  cursor: pointer;
   display: none;
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  color: #000000;
-  font-size: 40px;
+}
+.navbar .container-fluid .hamburger .line {
+  cursor: pointer;
+  width: 40px;
+  height: 5px;
+  background-color: #000000;
+  display: block;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+.navbar .container-fluid .hamburger.is-active {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+}
+.navbar .container-fluid .hamburger.is-active .line:nth-child(2) {
+  width: 0px;
+}
+.navbar .container-fluid .hamburger.is-active .line:nth-child(1),
+.navbar .container-fluid .hamburger.is-active .line:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.navbar .container-fluid .hamburger.is-active .line:nth-child(1) {
+  transform: translateY(10px);
+}
+.navbar .container-fluid .hamburger.is-active .line:nth-child(3) {
+  transform: translateY(-10px) rotate(90deg);
 }
 .navbar .container-fluid .nav_menu {
   display: flex;
@@ -715,7 +738,7 @@ a:hover {
   top: 0;
   left: 0;
   transform: scale(0);
-  z-index: 4;
+  z-index: 6;
 }
 .modal_section .modal_container.one {
   transform: scaleY(0.01) scaleX(0);
@@ -911,6 +934,10 @@ a:hover {
   100% {
     transform: scale(0);
   }
+}
+
+.modal-active {
+  overflow: hidden;
 }
 
 .slider {
@@ -1446,8 +1473,6 @@ a:hover {
   border: none;
   border-radius: 0px;
   background-color: #ffffff;
-  margin-top: 10px;
-  margin-bottom: 10px;
   transition: all linear 0.3s;
 }
 .pricing .overlay .card .card_header {
@@ -1504,10 +1529,6 @@ a:hover {
 }
 .pricing .overlay .card .card_body button:hover {
   background-color: #16b6ea;
-}
-.pricing .overlay .card:hover {
-  margin-top: 0px;
-  margin-bottom: 20px;
 }
 .pricing .overlay .card:hover .card_header h3,
 .pricing .overlay .card:hover .card_header h4,

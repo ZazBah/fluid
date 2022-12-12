@@ -22,8 +22,6 @@
             border: none;
             border-radius: 0px;
             background-color: $white;
-            margin-top: 10px;
-            margin-bottom: 10px;
             transition: $t-3;
             .card_header{
                 text-align: center;
@@ -75,8 +73,6 @@
                 }
             }
             &:hover{
-                margin-top: 0px;
-                margin-bottom: 20px;
                 .card_header{
                     h3,
                     h4,
