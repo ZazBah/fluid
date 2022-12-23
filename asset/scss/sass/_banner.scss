@@ -4,10 +4,12 @@
     overflow: hidden;
     .bg_img{
         position: absolute;
+        height: 1000px;
+        width: 1000px;
         top: 0;
         left: 0;
         z-index: -1;
-        animation: bg-rotate 150s infinite;
+        animation: bg-rotate 200s infinite;
     }
     h2{
         @include heading1;
@@ -21,8 +23,7 @@
         margin-top: 10px;
     }
     .banner_img{
-        width: 50%;
-        margin: 0 auto;
+        width: 100%;
     }
 }
 

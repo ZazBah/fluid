@@ -508,11 +508,13 @@ a:hover {
 }
 .banner .bg_img {
   position: absolute;
+  height: 1000px;
+  width: 1000px;
   top: 0;
   left: 0;
   z-index: -1;
-  -webkit-animation: bg-rotate 150s infinite;
-          animation: bg-rotate 150s infinite;
+  -webkit-animation: bg-rotate 200s infinite;
+          animation: bg-rotate 200s infinite;
 }
 .banner h2 {
   font-size: 35px;
@@ -613,8 +615,7 @@ a:hover {
   background-color: #0d6e8d;
 }
 .banner .banner_img {
-  width: 50%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 @-webkit-keyframes bg-rotate {
