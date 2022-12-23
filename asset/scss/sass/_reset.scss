@@ -33,3 +33,18 @@ a:hover{
     text-decoration: none;
     color: #000;
 }
+
+//scrolbar
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: $blackLight;
+}
+::-webkit-scrollbar-thumb {
+  background: $blue; 
+  border-radius: 10px;
+}
+::-webkit-resizer{
+  display: none;
+}

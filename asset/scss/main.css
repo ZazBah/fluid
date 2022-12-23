@@ -189,6 +189,23 @@ a:hover {
   color: #000;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #333333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #16b6ea;
+  border-radius: 10px;
+}
+
+::-webkit-resizer {
+  display: none;
+}
+
 .navbar {
   padding: 0px;
   width: 100%;
